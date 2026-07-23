@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { serviceInfo } from '../constants';
 
 // Tipizzazione per gli slot orari (espressi in minuti dalla mezzanotte per calcoli facili)
 interface TimeSlot {
@@ -31,6 +32,8 @@ export function OpeningHours() {
   const [currentMelbDay, setCurrentMelbDay] = useState<number | null>(null);
 
   useEffect(() => {
+    if (!serviceInfo.isOpenForBusiness) return;
+
     const checkStatus = () => {
       // Ottieni l'orario corrente specifico per Melbourne
       const now = new Date();
@@ -68,14 +71,14 @@ export function OpeningHours() {
           {isOpen && (
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
           )}
-          <span 
+          <span
             className={`relative inline-flex rounded-full h-3 w-3 ${
-              isOpen ? 'bg-green-500' : 'bg-red-500'
+              !serviceInfo.isOpenForBusiness ? 'bg-amber-500' : isOpen ? 'bg-green-500' : 'bg-red-500'
             }`}
           ></span>
         </span>
         <span className="font-sans font-semibold text-sm text-stone-800 uppercase tracking-wide">
-          {isOpen ? 'Open Now' : 'Closed'}
+          {!serviceInfo.isOpenForBusiness ? 'Opening Soon' : isOpen ? 'Open Now' : 'Closed'}
         </span>
       </div>
 

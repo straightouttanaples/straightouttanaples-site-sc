@@ -30,7 +30,7 @@ export default function Catering() {
             </p>
 
             <p className="font-sans text-base text-testo leading-relaxed text-justify">
-              We offer a premium catering service where we prepare our signature dishes right at your location. Treat your guests to authentic pizza, traditional Sicilian street food, golden arancini, handmade gnocchi, and much more. Looking for something interactive? We even offer live pizza-making masterclasses to entertain your guests!
+              We offer a premium catering service where we prepare our signature dishes right at your location. Treat your guests to authentic pizza, traditional Neapolitan street food, golden arancini, and much more. Looking for something interactive? We even offer live pizza-making masterclasses to entertain your guests!
             </p>
 
             <p className="font-sans text-base text-testo leading-relaxed text-justify">

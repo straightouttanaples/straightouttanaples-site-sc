@@ -1,4 +1,5 @@
 export const serviceInfo = {
+  isOpenForBusiness: false,
   name: 'Straight Outta Naples',
   description: 'Authentic Neapolitan recipes, wood-fired tradition — right in the heart of Melbourne.',
   address:'Maidstone, VIC 3012 Melbourne',
