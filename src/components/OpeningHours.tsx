@@ -15,13 +15,13 @@ interface DaySchedule {
 
 // Struttura dei dati degli orari (L'indice è il getDay() di JS: 0 = Domenica, 1 = Lunedì, ecc.)
 const SCHEDULE: Record<number, DaySchedule> = {
-  1: { label: 'MON', slots: [{ start: 11 * 60, end: 21 * 30 }], display: '11:00 AM – 09:30 PM' },
-  2: { label: 'TUE', slots: [{ start: 11 * 60, end: 21 * 30 }], display: '11:00 AM – 09:30 PM' },
-  3: { label: 'WED', slots: [{ start: 11 * 60, end: 21 * 30 }], display: '11:00 AM – 09:30 PM' },
-  4: { label: 'THU', slots: [{ start: 11 * 60, end: 22 * 30 }], display: '11:00 AM – 10:30 PM' },
-  5: { label: 'FRI', slots: [{ start: 11 * 60, end: 22 * 30 }], display: '11:00 AM – 10:30 PM' },
-  6: { label: 'SAT', slots: [{ start: 11 * 60, end: 22 * 30 }], display: '11:00 AM – 10:30 PM' },
-  0: { label: 'SUN', slots: [{ start: 11 * 60, end: 21 * 30 }], display: '11:00 AM – 09:30 PM' }
+  1: { label: 'MON', slots: [{ start: 11 * 60, end: 21 * 60 + 30 }], display: '11:00 AM – 09:30 PM' },
+  2: { label: 'TUE', slots: [{ start: 11 * 60, end: 21 * 60 + 30 }], display: '11:00 AM – 09:30 PM' },
+  3: { label: 'WED', slots: [{ start: 11 * 60, end: 21 * 60 + 30 }], display: '11:00 AM – 09:30 PM' },
+  4: { label: 'THU', slots: [{ start: 11 * 60, end: 22 * 60 + 30 }], display: '11:00 AM – 10:30 PM' },
+  5: { label: 'FRI', slots: [{ start: 11 * 60, end: 22 * 60 + 30 }], display: '11:00 AM – 10:30 PM' },
+  6: { label: 'SAT', slots: [{ start: 11 * 60, end: 22 * 60 + 30 }], display: '11:00 AM – 10:30 PM' },
+  0: { label: 'SUN', slots: [{ start: 11 * 60, end: 21 * 60 + 30 }], display: '11:00 AM – 09:30 PM' }
 };
 
 // Ordine di visualizzazione dal Lunedì (1) alla Domenica (0)
