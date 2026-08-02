@@ -10,7 +10,7 @@ export function HeroSection() {
       <img
         src={heroImg}
         alt="Pizza background"
-        className="absolute inset-0 w-full h-full object-cover object-center opacity-62"
+        className="absolute inset-0 w-full h-full object-cover object-center opacity-57"
         width={1920}
         height={1080}
         fetchPriority="high"
