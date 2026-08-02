@@ -1,10 +1,4 @@
 
-Azzurro Napoli: #0076B9
-
-Verde Tricolore: #00A650
-
-Rosso brand: #AD101F
-
 Bruno scuro: #4A3C2A
 
 Marrone medio: #997F68
@@ -19,3 +13,13 @@ Beige neutro: #D8C7A8
 
 Testo scuro: #3A3A3A
 
+root originale:
+
+  --palette-bruno-scuro:     #4A3C2A;
+  --palette-marrone-medio:   #997F68;
+  --palette-oro-principale:  #CDA972;
+  --palette-oro-brillante:   #E8BF6C;
+  --palette-sfondo-crema:    #F8F8F8;
+  --palette-sfondo-crema-gray:    #e7e4e4;
+  --palette-beige-neutro:    #D8C7A8;
+  --palette-testo-scuro:     #3A3A3A;

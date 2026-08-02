@@ -26,15 +26,15 @@ export function MenuSlideshow() {
   const [current, setCurrent] = useState(0);
 
   return (
-    <section className="bg-stone-100 py-16 sm:py-20 overflow-hidden">
+    <section className="bg-crema py-16 sm:py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
         <div className="text-center mb-10">
-          <p className="font-sans text-xs tracking-[0.2em] uppercase text-amber-700 mb-2 font-semibold">
+          <p className="font-sans text-xs tracking-[0.2em] uppercase text-red-700 mb-2 font-semibold">
             Straight from Kitchen
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-900">
+          <h2 className="font-serif text-3xl sm:text-4xl text-testo">
             The Menu
           </h2>
         </div>
@@ -117,8 +117,8 @@ export function MenuSlideshow() {
               <span
                 className={`block rounded-full transition-all duration-300 ${
                   i === current
-                    ? 'w-8 h-2 bg-amber-600'
-                    : 'w-2 h-2 bg-stone-300 group-hover:bg-stone-400'
+                    ? 'w-8 h-2 bg-red-600'
+                    : 'w-2 h-2 bg-crema-gray group-hover:bg-beige'
                 }`}
               />
             </button>

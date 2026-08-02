@@ -33,8 +33,8 @@ export default function Navbar() {
                 className={[
                   'font-sans text-sm font-medium tracking-wide transition-colors duration-150',
                   pathname === to
-                    ? 'text-oro border-b-2 border-oro pb-0.5'
-                    : 'text-testo hover:text-oro',
+                    ? 'text-azzurro border-b-2 border-azzurro pb-0.5'
+                    : 'text-testo hover:text-azzurro',
                 ].join(' ')}
               >
                 {label}
@@ -50,7 +50,7 @@ export default function Navbar() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           onClick={() => setOpen((v) => !v)}
-          className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded focus-visible:outline-2 focus-visible:outline-oro"
+          className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded focus-visible:outline-2 focus-visible:outline-azzurro"
         >
           <span
             className={[
@@ -89,7 +89,7 @@ export default function Navbar() {
                 onClick={() => setOpen(false)}
                 className={[
                   'block py-3 font-sans text-base font-medium border-b border-beige/60 transition-colors duration-150',
-                  pathname === to ? 'text-oro' : 'text-testo hover:text-oro',
+                  pathname === to ? 'text-azzurro' : 'text-testo hover:text-azzurro',
                 ].join(' ')}
               >
                 {label}

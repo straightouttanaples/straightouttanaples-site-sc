@@ -36,14 +36,14 @@ export default function MenuComingSoon() {
       
       {/* Titolo e Descrizione */}
       <div className="max-w-2xl mx-auto mb-16">
-        <h1 className="font-display text-3xl md:text-4xl text-stone-900 mb-6">
-          Our menu is <span className='text-amber-700'>taking shape...</span>
+        <h1 className="font-display text-3xl md:text-4xl text-testo mb-6">
+          Our menu is <span className='text-red-700'>taking shape...</span>
         </h1>
-        <p className="font-sans text-base md:text-lg text-stone-600 leading-relaxed mb-4">
-          We are finalizing a selection of dishes that celebrate the true essence of Italian cuisine. 
+        <p className="font-sans text-base md:text-lg text-testo leading-relaxed mb-4">
+          We are finalizing a selection of dishes that celebrate the true essence of Italian cuisine.
         </p>
-        <p className="font-sans text-base md:text-lg text-stone-600 leading-relaxed font-medium">
-          We pride ourselves on being masters of flavor, ensuring everyone has a seat at our table with our specialized <strong className="text-stone-800">Vegan</strong> and <strong className="text-stone-800">Gluten-Free</strong> offerings.
+        <p className="font-sans text-base md:text-lg text-testo leading-relaxed font-medium">
+          We pride ourselves on being masters of flavor, ensuring everyone has a seat at our table with our specialized <strong className="text-testo">Vegan</strong> and <strong className="text-testo">Gluten-Free</strong> offerings.
         </p>
       </div>
 
@@ -52,20 +52,20 @@ export default function MenuComingSoon() {
         
         {/* Vegan */}
         <div className="flex flex-col items-center group">
-          <div className="w-24 h-24 md:w-28 md:h-28 rounded-full border-[2.5px] border-[#e67e22] text-[#e67e22] flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-105">
+          <div className="w-24 h-24 md:w-28 md:h-28 rounded-full border-[2.5px] border-azzurro text-azzurro flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-105">
             <IconVegan className="w-12 h-12 md:w-14 md:h-14" />
           </div>
-          <span className="font-sans text-stone-900 text-lg md:text-xl font-medium tracking-wide">
+          <span className="font-sans text-testo text-lg md:text-xl font-medium tracking-wide">
             Vegan
           </span>
         </div>
 
         {/* Gluten Free */}
         <div className="flex flex-col items-center group">
-          <div className="w-24 h-24 md:w-28 md:h-28 rounded-full border-[2.5px] border-[#e67e22] text-[#e67e22] flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-105">
+          <div className="w-24 h-24 md:w-28 md:h-28 rounded-full border-[2.5px] border-azzurro text-azzurro flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-105">
             <IconGlutenFree className="w-12 h-12 md:w-14 md:h-14" />
           </div>
-          <span className="font-sans text-stone-900 text-lg md:text-xl font-medium tracking-wide">
+          <span className="font-sans text-testo text-lg md:text-xl font-medium tracking-wide">
             Gluten Free
           </span>
         </div>
@@ -75,7 +75,7 @@ export default function MenuComingSoon() {
       {/* Bottone di ritorno (Se usi React Router o simili, puoi sostituire la <a> con <Link>) */}
       <a
         href="/"
-        className="inline-flex items-center justify-center min-h-[48px] px-8 py-3 rounded-full bg-oro text-bruno font-sans font-semibold text-sm tracking-wide transition-colors duration-150 hover:bg-oro/90 active:scale-95"
+        className="inline-flex items-center justify-center min-h-[48px] px-8 py-3 rounded-full bg-azzurro text-bruno font-sans font-semibold text-sm tracking-wide transition-colors duration-150 hover:bg-azzurro/90 active:scale-95"
       >
         Return to Home
       </a>

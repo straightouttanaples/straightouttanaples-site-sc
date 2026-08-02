@@ -50,7 +50,7 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="flex flex-col gap-4">
-            <h3 className="font-display text-lg text-oro-bright tracking-wide">{serviceInfo.name}</h3>
+            <h3 className="font-display text-lg text-azzurro-bright tracking-wide">{serviceInfo.name}</h3>
             <p className="text-sm text-beige/70 leading-relaxed">
               {serviceInfo.description || 'Authentic Neapolitan cuisine in the heart of Melbourne.'}
             </p>
@@ -58,26 +58,26 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="flex flex-col gap-3">
-            <h3 className="font-display text-lg text-oro-bright tracking-wide">Contact</h3>
+            <h3 className="font-display text-lg text-azzurro-bright tracking-wide">Contact</h3>
             <a
               href={`https://maps.google.com/?q=${encodeURIComponent(serviceInfo.address)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-start gap-2.5 text-sm text-beige/80 hover:text-oro transition-colors duration-150"
+              className="flex items-start gap-2.5 text-sm text-beige/80 hover:text-azzurro transition-colors duration-150"
             >
               <IconMap className="w-4 h-4 mt-0.5 shrink-0" />
               {serviceInfo.address}
             </a>
             <a
               href={`tel:${serviceInfo.phone.replace(/\D/g, '')}`}
-              className="flex items-center gap-2.5 text-sm text-beige/80 hover:text-oro transition-colors duration-150"
+              className="flex items-center gap-2.5 text-sm text-beige/80 hover:text-azzurro transition-colors duration-150"
             >
               <IconPhone className="w-4 h-4 shrink-0" />
               {serviceInfo.phone}
             </a>
             <a
               href={`mailto:${serviceInfo.email}`}
-              className="flex items-center gap-2.5 text-sm text-beige/80 hover:text-oro transition-colors duration-150"
+              className="flex items-center gap-2.5 text-sm text-beige/80 hover:text-azzurro transition-colors duration-150"
             >
               <IconMail className="w-4 h-4 shrink-0" />
               {serviceInfo.email}
@@ -86,14 +86,14 @@ export default function Footer() {
 
           {/* Social */}
           <div className="flex flex-col gap-3">
-            <h3 className="font-display text-lg text-oro-bright tracking-wide">Follow us</h3>
+            <h3 className="font-display text-lg text-azzurro-bright tracking-wide">Follow us</h3>
             <div className="flex gap-5">
               <a
                 href={serviceInfo.igLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`${serviceInfo.name} on Instagram`}
-                className="flex items-center gap-2 text-sm text-beige/80 hover:text-oro transition-colors duration-150"
+                className="flex items-center gap-2 text-sm text-beige/80 hover:text-azzurro transition-colors duration-150"
               >
                 <IconInstagram className="w-5 h-5" />
                 Instagram
@@ -103,7 +103,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`${serviceInfo.name} on Facebook`}
-                className="flex items-center gap-2 text-sm text-beige/80 hover:text-oro transition-colors duration-150"
+                className="flex items-center gap-2 text-sm text-beige/80 hover:text-azzurro transition-colors duration-150"
               >
                 <IconFacebook className="w-5 h-5" />
                 Facebook

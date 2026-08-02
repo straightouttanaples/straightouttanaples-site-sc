@@ -16,7 +16,7 @@ export default function Catering() {
           <div className="lg:col-span-8 lg:col-start-3 flex flex-col gap-6">
 
             <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl text-testo leading-tight">
-              BRING {serviceInfo.name.toUpperCase()} TO <span className='text-amber-700'> YOUR TABLE</span>
+              BRING {serviceInfo.name.toUpperCase()} TO <span className='text-red-700'> YOUR TABLE</span>
             </h2>
 
             <hr className="border-beige" />
@@ -40,7 +40,7 @@ export default function Catering() {
             <div>
               <a
                 href={`mailto:${serviceInfo.email}`}
-                className="inline-flex items-center justify-center gap-2 min-h-[48px] px-8 py-3 rounded-full bg-oro text-bruno font-sans font-semibold text-sm tracking-wide transition-colors duration-150 hover:bg-oro-bright active:scale-95"
+                className="inline-flex items-center justify-center gap-2 min-h-[48px] px-8 py-3 rounded-full bg-azzurro text-bruno font-sans font-semibold text-sm tracking-wide transition-colors duration-150 hover:bg-azzurro-bright active:scale-95"
               >
                 <IconMail className="w-4 h-4 shrink-0" />
                 Contact Us

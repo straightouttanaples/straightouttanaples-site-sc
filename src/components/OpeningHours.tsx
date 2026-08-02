@@ -15,13 +15,13 @@ interface DaySchedule {
 
 // Struttura dei dati degli orari (L'indice è il getDay() di JS: 0 = Domenica, 1 = Lunedì, ecc.)
 const SCHEDULE: Record<number, DaySchedule> = {
-  1: { label: 'MON', slots: [{ start: 11 * 60, end: 23 * 60 }], display: '11:00 AM – 11:00 PM' },
-  2: { label: 'TUE', slots: [{ start: 11 * 60, end: 23 * 60 }], display: '11:00 AM – 11:00 PM' },
-  3: { label: 'WED', slots: [{ start: 11 * 60, end: 23 * 60 }], display: '11:00 AM – 11:00 PM' },
-  4: { label: 'THU', slots: [{ start: 11 * 60, end: 23 * 60 }], display: '11:00 AM – 11:00 PM' },
-  5: { label: 'FRI', slots: [{ start: 11 * 60, end: 23 * 60 }], display: '11:00 AM – 11:00 PM' },
-  6: { label: 'SAT', slots: [{ start: 11 * 60, end: 23 * 60 }], display: '11:00 AM – 11:00 PM' },
-  0: { label: 'SUN', slots: [{ start: 11 * 60, end: 23 * 60 }], display: '11:00 AM – 11:00 PM' }
+  1: { label: 'MON', slots: [{ start: 11 * 60, end: 21 * 30 }], display: '11:00 AM – 09:30 PM' },
+  2: { label: 'TUE', slots: [{ start: 11 * 60, end: 21 * 30 }], display: '11:00 AM – 09:30 PM' },
+  3: { label: 'WED', slots: [{ start: 11 * 60, end: 21 * 30 }], display: '11:00 AM – 09:30 PM' },
+  4: { label: 'THU', slots: [{ start: 11 * 60, end: 22 * 30 }], display: '11:00 AM – 10:30 PM' },
+  5: { label: 'FRI', slots: [{ start: 11 * 60, end: 22 * 30 }], display: '11:00 AM – 10:30 PM' },
+  6: { label: 'SAT', slots: [{ start: 11 * 60, end: 22 * 30 }], display: '11:00 AM – 10:30 PM' },
+  0: { label: 'SUN', slots: [{ start: 11 * 60, end: 21 * 30 }], display: '11:00 AM – 09:30 PM' }
 };
 
 // Ordine di visualizzazione dal Lunedì (1) alla Domenica (0)
@@ -77,13 +77,13 @@ export function OpeningHours() {
             }`}
           ></span>
         </span>
-        <span className="font-sans font-semibold text-sm text-stone-800 uppercase tracking-wide">
+        <span className="font-sans font-semibold text-sm text-testo uppercase tracking-wide">
           {!serviceInfo.isOpenForBusiness ? 'Opening Soon' : isOpen ? 'Open Now' : 'Closed'}
         </span>
       </div>
 
       {/* Hours List */}
-      <div className="flex flex-col gap-3 font-sans text-stone-600">
+      <div className="flex flex-col gap-3 font-sans text-testo">
         {DISPLAY_ORDER.map((dayIndex) => {
           const isToday = currentMelbDay === dayIndex;
           const { label, display } = SCHEDULE[dayIndex];
@@ -92,7 +92,7 @@ export function OpeningHours() {
             <div 
               key={dayIndex}
               className={`flex justify-between items-center py-1.5 px-3 rounded-md transition-colors ${
-                isToday ? 'bg-stone-200/60 font-medium text-stone-900 shadow-sm' : ''
+                isToday ? 'bg-crema-gray/60 font-medium text-testo shadow-sm' : ''
               }`}
             >
               <span className="w-12 text-left">{label}</span>

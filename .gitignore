@@ -27,3 +27,6 @@ dist-ssr
 .agents
 assets-unfiltered
 **/performance-report.md
+color-report.md
+programma.txt
+programma-new.txt
