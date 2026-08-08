@@ -3,14 +3,11 @@ import { Link, useLocation } from 'react-router'
 import logo from '../assets/logo.webp'
 
 const NAV_LINKS = [
-  { label: 'Menu',         to: '/menu' },
-  { label: 'Reservations', to: '/reservations' },
-  { label: 'Functions',    to: '/functions' },
-  { label: 'Order', to: '/order' },
-  { label: 'Events', to: '/events' },
-  { label: 'Catering', to: '/catering' }
+  { label: 'Menu',           to: '/menu' },
+  { label: 'Pick up Order',  to: '/order' },
+  { label: 'Booking',        to: '/Bookings' },
+  { label: 'Contact us',     to: '/Contactus' },
 ]
-
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const { pathname } = useLocation()
