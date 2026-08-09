@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router'
 import logo from '../assets/logo.webp'
 
 const NAV_LINKS = [
+  { label: 'About',         to: '/about' },
   { label: 'Menu',          to: '/menu' },
   { label: 'Order Online',  to: 'https://straight-outta-naples.square.site/s/order', external: true },
   { label: 'Booking',       to: '/Bookings' },
