@@ -27,7 +27,7 @@ export default function Navbar() {
             <li key={to}>
               {external ? (
                 
-                  href={to}
+                  <a href={to}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-sans text-sm font-medium tracking-wide transition-colors duration-150 text-testo hover:text-azzurro"
@@ -94,7 +94,7 @@ export default function Navbar() {
             <li key={to}>
               {external ? (
                 
-                  href={to}
+                  <a href={to}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setOpen(false)}
