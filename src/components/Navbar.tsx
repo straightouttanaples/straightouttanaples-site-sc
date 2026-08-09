@@ -18,7 +18,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link to="/" onClick={() => setOpen(false)} className="shrink-0">
-          <img src={logo} alt="Logo" className="h-20 w-auto" />
+          <img src={logo} alt="Logo" className="h-18 w-auto" />
         </Link>
 
         {/* Desktop links */}
