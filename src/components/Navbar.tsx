@@ -30,7 +30,7 @@ export default function Navbar() {
                   <a href={to}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-sans text-sm font-medium tracking-wide transition-colors duration-150 text-testo hover:text-azzurro"
+                  className="font-sans text-base font-medium tracking-wide transition-colors duration-150 text-testo hover:text-azzurro"
                 >
                   {label}
                 </a>
@@ -38,7 +38,7 @@ export default function Navbar() {
                 <Link
                   to={to}
                   className={[
-                    'font-sans text-sm font-medium tracking-wide transition-colors duration-150',
+                    'font-sans text-base font-medium tracking-wide transition-colors duration-150',
                     pathname === to
                       ? 'text-azzurro border-b-2 border-azzurro pb-0.5'
                       : 'text-testo hover:text-azzurro',
