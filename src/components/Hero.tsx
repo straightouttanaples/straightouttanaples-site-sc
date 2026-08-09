@@ -30,10 +30,6 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-6 md:gap-8 text-center">
-
-      <p className="font-sans text-2xl sm:text-3xl lg:text-4xl font-bold tracking-[0.2em] uppercase text-azzurro-bright">
-          {serviceInfo.name}
-        </p>
         {/* Aggiunto text-balance per evitare che il testo "rompa" il layout e si adatti meglio */}
         <h1 className="font-sans text-xl sm:text-2xl lg:text-3xl text-white leading-tight sm:leading-tight lg:leading-tight text-balance">
           The authentic soul of Naples,<br className="hidden sm:block" /> your new favorite pizza place
