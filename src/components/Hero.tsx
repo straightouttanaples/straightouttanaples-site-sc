@@ -22,7 +22,7 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-6 md:gap-8 text-center">
 
-       <p className="font-sans text-xl sm:text-2xl lg:text-3xl font-bold tracking-[0.2em] uppercase text-azzurro-bright">
+      <p className="font-sans text-2xl sm:text-3xl lg:text-4xl font-bold tracking-[0.2em] uppercase text-azzurro-bright">
           {serviceInfo.name}
         </p>
         {/* Aggiunto text-balance per evitare che il testo "rompa" il layout e si adatti meglio */}
@@ -42,19 +42,19 @@ export function HeroSection() {
           >
             Menu
           </Link>
-          <Link
-            to="/Bookings"
-            className="min-h-[48px] flex items-center justify-center px-8 py-3 rounded-full border-2 border-white/70 text-white font-sans font-semibold text-sm tracking-wide transition-colors duration-150 hover:bg-white/10 active:scale-95"
-          >
-            Book Now
-          </Link>
-                    <a href="https://straight-outta-naples.square.site/s/order"
+          <a href="https://straight-outta-naples.square.site/s/order"
             target="_blank"
             rel="noopener noreferrer"
             className="min-h-[48px] flex items-center justify-center px-8 py-3 rounded-full border-2 border-white/70 text-white font-sans font-semibold text-sm tracking-wide transition-colors duration-150 hover:bg-white/10 active:scale-95"
           >
             Order Online
           </a>
+          <Link
+            to="/Bookings"
+            className="min-h-[48px] flex items-center justify-center px-8 py-3 rounded-full border-2 border-white/70 text-white font-sans font-semibold text-sm tracking-wide transition-colors duration-150 hover:bg-white/10 active:scale-95"
+          >
+            Book Now
+          </Link>
         </div>
       </div>
     </section>
