@@ -7,7 +7,6 @@ const NAV_LINKS = [
   { label: 'Menu',          to: '/menu' },
   { label: 'Order Online',  to: 'https://straight-outta-naples.square.site/s/order', external: true },
   { label: 'Booking',       to: '/Bookings' },
-  { label: 'Contact us',    to: '/Contactus' },
 ]
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -19,7 +18,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link to="/" onClick={() => setOpen(false)} className="shrink-0">
-          <img src={logo} alt="Logo" className="h-20 w-auto" />
+          <img src={logo} alt="Logo" className="h-18 w-auto" />
         </Link>
 
         {/* Desktop links */}
