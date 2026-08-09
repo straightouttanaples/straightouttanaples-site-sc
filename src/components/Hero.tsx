@@ -31,11 +31,11 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-6 md:gap-8 text-center">
         {/* Aggiunto text-balance per evitare che il testo "rompa" il layout e si adatti meglio */}
-        <h1 className="font-sans text-xl sm:text-2xl lg:text-3xl text-white leading-tight sm:leading-tight lg:leading-tight text-balance">
+        <h1 className="font-sans font-bold text-xl sm:text-2xl lg:text-3xl text-white leading-tight sm:leading-tight lg:leading-tight text-balance">
           The authentic soul of Naples,<br className="hidden sm:block" /> your new favorite pizza place
         </h1>
 
-        <p className="font-sans text-sm sm:text-base text-white/75 w-full max-w-xl text-balance">
+        <p className="font-sans font-bold italic text-base sm:text-lg text-white/75 w-full max-w-xl text-balance">
           {serviceInfo.description}
         </p>
 
