@@ -20,6 +20,7 @@ export const router = createBrowserRouter(
       element: <RootLayout />,
       children: [
         { path: '/',           element: <Page component={HomePage} /> },
+        { path: '/about',      element: <Page component={ComingSoon} /> },
         { path: '/menu',       element: <Page component={MenuComingSoon} /> },
         { path: '/order',      element: <Page component={ComingSoon} /> },
         { path: '/Bookings',   element: <Page component={ComingSoon} /> },
