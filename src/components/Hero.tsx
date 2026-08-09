@@ -1,5 +1,6 @@
 import { serviceInfo } from '../constants'
 import heroImg from '../assets/hero.webp'
+import heroImgMobile from '../assets/hero-mobile.webp'
 import { Link } from 'react-router'
 
 export function HeroSection() {
@@ -7,10 +8,18 @@ export function HeroSection() {
     <section className="relative h-svh min-h-[600px] w-full flex flex-col items-center justify-center overflow-hidden">
 
       {/* Background image */}
+     <img
+        src={heroImgMobile}
+        alt="Pizza background"
+        className="md:hidden absolute inset-0 w-full h-full object-cover object-center opacity-90"
+        width={1080}
+        height={1920}
+        fetchPriority="high"
+      />
       <img
         src={heroImg}
         alt="Pizza background"
-        className="absolute inset-0 w-full h-full object-cover object-center opacity-90"
+        className="hidden md:block absolute inset-0 w-full h-full object-cover object-center opacity-90"
         width={1920}
         height={1080}
         fetchPriority="high"
