@@ -3,10 +3,10 @@ import { Link, useLocation } from 'react-router'
 import logo from '../assets/logo.webp'
 
 const NAV_LINKS = [
-  { label: 'Menu',           to: '/menu' },
-  { label: 'Order Online',  to: '/order' },
-  { label: 'Booking',        to: '/Bookings' },
-  { label: 'Contact us',     to: '/Contactus' },
+  { label: 'Menu',          to: '/menu' },
+  { label: 'Order Online',  to: 'https://straight-outta-naples.square.site/s/order', external: true },
+  { label: 'Booking',       to: '/Bookings' },
+  { label: 'Contact us',    to: '/Contactus' },
 ]
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -23,19 +23,30 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-8">
-          {NAV_LINKS.map(({ label, to }) => (
+          {NAV_LINKS.map(({ label, to, external }) => (
             <li key={to}>
-              <Link
-                to={to}
-                className={[
-                  'font-sans text-sm font-medium tracking-wide transition-colors duration-150',
-                  pathname === to
-                    ? 'text-azzurro border-b-2 border-azzurro pb-0.5'
-                    : 'text-testo hover:text-azzurro',
-                ].join(' ')}
-              >
-                {label}
-              </Link>
+              {external ? (
+                
+                  href={to}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-sans text-sm font-medium tracking-wide transition-colors duration-150 text-testo hover:text-azzurro"
+                >
+                  {label}
+                </a>
+              ) : (
+                <Link
+                  to={to}
+                  className={[
+                    'font-sans text-sm font-medium tracking-wide transition-colors duration-150',
+                    pathname === to
+                      ? 'text-azzurro border-b-2 border-azzurro pb-0.5'
+                      : 'text-testo hover:text-azzurro',
+                  ].join(' ')}
+                >
+                  {label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
@@ -79,18 +90,30 @@ export default function Navbar() {
         ].join(' ')}
       >
         <ul className="flex flex-col px-4 pb-4 gap-1 bg-crema border-t border-beige">
-          {NAV_LINKS.map(({ label, to }) => (
+          {NAV_LINKS.map(({ label, to, external }) => (
             <li key={to}>
-              <Link
-                to={to}
-                onClick={() => setOpen(false)}
-                className={[
-                  'block py-3 font-sans text-base font-medium border-b border-beige/60 transition-colors duration-150',
-                  pathname === to ? 'text-azzurro' : 'text-testo hover:text-azzurro',
-                ].join(' ')}
-              >
-                {label}
-              </Link>
+              {external ? (
+                
+                  href={to}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setOpen(false)}
+                  className="block py-3 font-sans text-base font-medium border-b border-beige/60 transition-colors duration-150 text-testo hover:text-azzurro"
+                >
+                  {label}
+                </a>
+              ) : (
+                <Link
+                  to={to}
+                  onClick={() => setOpen(false)}
+                  className={[
+                    'block py-3 font-sans text-base font-medium border-b border-beige/60 transition-colors duration-150',
+                    pathname === to ? 'text-azzurro' : 'text-testo hover:text-azzurro',
+                  ].join(' ')}
+                >
+                  {label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>

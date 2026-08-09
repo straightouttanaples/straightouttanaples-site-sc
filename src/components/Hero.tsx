@@ -49,12 +49,13 @@ export function HeroSection() {
           >
             Book Now
           </Link>
-                    <Link
-            to="/order"
+                    href="https://straight-outta-naples.square.site/s/order"
+            target="_blank"
+            rel="noopener noreferrer"
             className="min-h-[48px] flex items-center justify-center px-8 py-3 rounded-full border-2 border-white/70 text-white font-sans font-semibold text-sm tracking-wide transition-colors duration-150 hover:bg-white/10 active:scale-95"
           >
             Order Online
-          </Link>
+          </a>
         </div>
       </div>
     </section>
