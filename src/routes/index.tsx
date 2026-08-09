@@ -24,7 +24,6 @@ export const router = createBrowserRouter(
         { path: '/menu',       element: <Page component={MenuComingSoon} /> },
         { path: '/order',      element: <Page component={ComingSoon} /> },
         { path: '/Bookings',   element: <Page component={ComingSoon} /> },
-        { path: '/Contactus',  element: <Page component={ComingSoon} /> },
       ],
     }
   ],
