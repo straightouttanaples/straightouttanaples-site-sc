@@ -4,7 +4,7 @@ import logo from '../assets/logo.webp'
 
 const NAV_LINKS = [
   { label: 'Menu',           to: '/menu' },
-  { label: 'Pick up Order',  to: '/order' },
+  { label: 'Online Order',  to: '/order' },
   { label: 'Booking',        to: '/Bookings' },
   { label: 'Contact us',     to: '/Contactus' },
 ]
