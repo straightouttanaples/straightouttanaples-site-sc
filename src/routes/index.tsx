@@ -5,6 +5,7 @@ import RootLayout from '../pages/RootLayout'
 const HomePage       = lazy(() => import('../pages/HomePage'))
 const MenuComingSoon = lazy(() => import('../components/MenuComingSoon'))
 const ComingSoon     = lazy(() => import('../components/ComingSoon'))
+const Bookings       = lazy(() => import('../pages/Bookings'))
 
 function Page({ component: Component }: { component: React.ComponentType }) {
   return (
@@ -23,7 +24,7 @@ export const router = createBrowserRouter(
         { path: '/about',      element: <Page component={ComingSoon} /> },
         { path: '/menu',       element: <Page component={MenuComingSoon} /> },
         { path: '/order',      element: <Page component={ComingSoon} /> },
-        { path: '/Bookings',   element: <Page component={ComingSoon} /> },
+        { path: '/Bookings',   element: <Page component={Bookings} /> },
       ],
     }
   ],
