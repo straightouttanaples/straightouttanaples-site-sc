@@ -21,7 +21,7 @@ export default function About() {
           <img
             src={marcoImg}
             alt="Marco, founder of Straight Outta Naples, holding a wood-fired pizza"
-            className="w-56 sm:w-64 md:w-72 rounded-2xl object-cover shrink-0"
+            className="w-72 sm:w-80 md:w-96 rounded-2xl object-cover shrink-0"
           />
 
           <div className="font-sans text-base sm:text-lg text-testo leading-relaxed space-y-4">
