@@ -1,0 +1,1 @@
+var e=`/assets/interior-4-SspFAy6n.webp`;export{e as t};
