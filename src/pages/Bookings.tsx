@@ -25,7 +25,7 @@ export default function Bookings() {
       </p>
 
       
-        <a href={`tel:+61${serviceInfo.phone.slice(1)}`}
+        <a href={`tel:+61${serviceInfo.phone.replace(/\D/g, '').slice(1)}`}
         className="inline-flex items-center gap-2 min-h-[48px] px-8 py-3 rounded-full bg-azzurro text-white font-sans font-semibold text-sm tracking-wide transition-colors duration-150 hover:bg-azzurro-bright active:scale-95"
       >
         <svg
