@@ -5,7 +5,7 @@ export default function Catering() {
     <section className="min-h-[70vh] flex flex-col items-center justify-center text-center px-4 bg-crema">
 
       <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl text-bruno mb-6">
-        Catering by Phone
+        Catering
       </h1>
 
       <p className="font-sans text-base sm:text-lg text-testo max-w-md mb-3 leading-relaxed">
