@@ -3,7 +3,7 @@ import { createBrowserRouter } from 'react-router'
 import RootLayout from '../pages/RootLayout'
 
 const HomePage       = lazy(() => import('../pages/HomePage'))
-const MenuComingSoon = lazy(() => import('../components/MenuComingSoon'))
+const Menu           = lazy(() => import('../pages/Menu'))
 const ComingSoon     = lazy(() => import('../components/ComingSoon'))
 const Bookings       = lazy(() => import('../pages/Bookings'))
 const Catering       = lazy(() => import('../pages/Catering'))
@@ -24,7 +24,7 @@ export const router = createBrowserRouter(
       children: [
         { path: '/',           element: <Page component={HomePage} /> },
         { path: '/about',      element: <Page component={About} /> },
-        { path: '/menu',       element: <Page component={MenuComingSoon} /> },
+        { path: '/menu',       element: <Page component={Menu} /> },
         { path: '/order',      element: <Page component={ComingSoon} /> },
         { path: '/Bookings',   element: <Page component={Bookings} /> },
         { path: '/Catering',   element: <Page component={Catering} /> },
