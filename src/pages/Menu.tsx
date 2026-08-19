@@ -90,17 +90,17 @@ function ItemRow({ item }: { item: MenuItem }) {
   return (
     <li className="py-3 border-b border-crema-gray last:border-b-0">
       <div className="flex flex-wrap items-baseline gap-x-2">
-        <span className="font-sans font-bold text-testo text-sm sm:text-base uppercase tracking-wide">
+        <span className="font-sans font-bold text-testo text-base sm:text-lg uppercase tracking-wide">
           {item.name}
         </span>
         {item.tags && (
-          <span className="font-sans text-azzurro text-xs sm:text-sm font-semibold">
+          <span className="font-sans text-azzurro text-sm sm:text-base font-semibold">
             ({item.tags})
           </span>
         )}
       </div>
       {item.description && (
-        <p className="font-sans text-testo/70 text-sm mt-1 leading-relaxed">
+        <p className="font-sans text-testo/70 text-base mt-1 leading-relaxed">
           {item.description}
         </p>
       )}
