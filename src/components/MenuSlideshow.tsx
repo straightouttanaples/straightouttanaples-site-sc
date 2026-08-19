@@ -61,7 +61,7 @@ export function MenuSlideshow() {
             {SLIDES.map((slide, i) => (
               <SwiperSlide 
                 key={i} 
-                className="w-full shrink-0 aspect-[4/3] sm:aspect-[16/9] relative"
+                 className="w-full shrink-0 aspect-square relative"
               >
                 <img
                   src={slide.src}
