@@ -35,7 +35,7 @@ export function MenuSlideshow() {
             Straight from Kitchen
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl text-testo">
-            The Menu
+            From the Menu
           </h2>
         </div>
 
