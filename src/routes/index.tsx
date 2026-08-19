@@ -3,7 +3,7 @@ import { createBrowserRouter } from 'react-router'
 import RootLayout from '../pages/RootLayout'
 
 const HomePage       = lazy(() => import('../pages/HomePage'))
-const MenuComingSoon = lazy(() => import('../components/MenuComingSoon'))
+const Menu           = lazy(() => import('../pages/Menu'))
 const ComingSoon     = lazy(() => import('../components/ComingSoon'))
 const Bookings       = lazy(() => import('../pages/Bookings'))
 const Catering       = lazy(() => import('../pages/Catering'))
