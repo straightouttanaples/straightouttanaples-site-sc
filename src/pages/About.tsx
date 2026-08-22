@@ -4,6 +4,8 @@ import italyMapImg from '../assets/italy-map.jpeg'
 export default function About() {
   return (
     <section className="bg-crema px-4 py-16 sm:py-20">
+      <title>Our Story | Straight Outta Naples, Maidstone</title>
+      <meta name="description" content="A taste of Naples, a piece of home. Learn the story behind Straight Outta Naples, Maidstone's authentic Neapolitan pizzeria." />
       <div className="max-w-4xl mx-auto">
 
         <p className="font-sans text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-azzurro-bright text-center mb-3">
