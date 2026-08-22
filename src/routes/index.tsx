@@ -26,8 +26,8 @@ export const router = createBrowserRouter(
         { path: '/about',      element: <Page component={About} /> },
         { path: '/menu',       element: <Page component={Menu} /> },
         { path: '/order',      element: <Page component={ComingSoon} /> },
-        { path: '/Bookings',   element: <Page component={Bookings} /> },
-        { path: '/Catering',   element: <Page component={Catering} /> },
+        { path: '/bookings',   element: <Page component={Bookings} /> },
+        { path: '/catering',   element: <Page component={Catering} /> },
       ],
     }
   ],
