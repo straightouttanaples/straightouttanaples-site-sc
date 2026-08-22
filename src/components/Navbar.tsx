@@ -6,8 +6,8 @@ const NAV_LINKS = [
   { label: 'About',         to: '/about' },
   { label: 'Menu',          to: '/menu' },
   { label: 'Order Online',  to: 'https://straight-outta-naples.square.site/s/order', external: true },
-  { label: 'Booking',       to: '/Bookings' },
-  { label: 'Catering',      to: '/Catering' },
+  { label: 'Booking',       to: '/bookings' },
+  { label: 'Catering',      to: '/catering' },
 ]
 export default function Navbar() {
   const [open, setOpen] = useState(false)
