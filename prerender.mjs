@@ -4,7 +4,7 @@ import handler from 'serve-handler';
 import fs from 'fs';
 import path from 'path';
 
-const routes = ['/', '/about', '/menu', '/Bookings', '/Catering'];
+const routes = ['/', '/about', '/menu', '/bookings', '/catering'];
 const DIST_DIR = path.resolve('dist');
 const PORT = 5005;
 
