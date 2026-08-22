@@ -3,7 +3,8 @@ import { serviceInfo } from '../constants'
 export default function Bookings() {
   return (
     <section className="min-h-[70vh] flex flex-col items-center justify-center text-center px-4 bg-crema">
-
+    <title>Book a Table | Straight Outta Naples, Maidstone</title>
+    <meta name="description" content="Reserve a table at Straight Outta Naples, Maidstone. Call (03) 9689 1954 — walk-ins welcome." />
       <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl text-bruno mb-6">
         Reservations
       </h1>
