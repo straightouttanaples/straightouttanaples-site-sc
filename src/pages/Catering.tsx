@@ -3,7 +3,8 @@ import { serviceInfo } from '../constants'
 export default function Catering() {
   return (
     <section className="min-h-[70vh] flex flex-col items-center justify-center text-center px-4 bg-crema">
-
+      <title>Catering | Straight Outta Naples, Maidstone</title>
+      <meta name="description" content="Planning an event? Straight Outta Naples offers Neapolitan pizza catering in Maidstone. Call (03) 9689 1954 to discuss your menu." />
       <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl text-bruno mb-6">
         Catering
       </h1>
