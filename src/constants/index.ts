@@ -1,5 +1,5 @@
 export const serviceInfo = {
-  isOpenForBusiness: false,
+  isOpenForBusiness: true,
   name: 'Straight Outta Naples',
   description: 'Authentic Neapolitan recipes, traditional pizza — right in the heart of Maidstone.',
   address:'2/12 Hampstead Rd Maidstone VIC 3012',
