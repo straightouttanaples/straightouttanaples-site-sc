@@ -4,10 +4,11 @@ import RootLayout from '../pages/RootLayout'
 
 const HomePage       = lazy(() => import('../pages/HomePage'))
 const Menu           = lazy(() => import('../pages/Menu'))
+const Specials       = lazy(() => import('../pages/Specials'))
 const ComingSoon     = lazy(() => import('../components/ComingSoon'))
 const Bookings       = lazy(() => import('../pages/Bookings'))
 const Catering       = lazy(() => import('../pages/Catering'))
-const About           = lazy(() => import('../pages/About'))
+const About          = lazy(() => import('../pages/About'))
 
 function Page({ component: Component }: { component: React.ComponentType }) {
   return (
@@ -25,6 +26,7 @@ export const router = createBrowserRouter(
         { path: '/',           element: <Page component={HomePage} /> },
         { path: '/about',      element: <Page component={About} /> },
         { path: '/menu',       element: <Page component={Menu} /> },
+        { path: '/specials',   element: <Page component={Specials} /> },
         { path: '/order',      element: <Page component={ComingSoon} /> },
         { path: '/bookings',   element: <Page component={Bookings} /> },
         { path: '/catering',   element: <Page component={Catering} /> },
