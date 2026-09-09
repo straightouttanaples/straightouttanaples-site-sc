@@ -18,7 +18,7 @@ const SCHEDULE: Record<number, DaySchedule> = {
   1: { label: 'MON', slots: [{ start: 11 * 60, end: 21 * 60 }], display: '11:00 AM – 09:00 PM' },
   2: { label: 'TUE', slots: [{ start: 11 * 60, end: 21 * 60 }], display: '11:00 AM – 09:00 PM' },
   3: { label: 'WED', slots: [{ start: 11 * 60, end: 21 * 60 }], display: '11:00 AM – 09:00 PM' },
-  4: { label: 'THU', slots: [{ start: 11 * 60, end: 21 * 60 }], display: '11:00 AM – 09:00 PM' },
+  4: { label: 'THU', slots: [{ start: 11 * 60, end: 21 * 60 + 30 }], display: '11:00 AM – 09:30 PM' },
   5: { label: 'FRI', slots: [{ start: 11 * 60, end: 22 * 60 }], display: '11:00 AM – 10:00 PM' },
   6: { label: 'SAT', slots: [{ start: 11 * 60, end: 22 * 60 }], display: '11:00 AM – 10:00 PM' },
   0: { label: 'SUN', slots: [{ start: 11 * 60, end: 21 * 60 }], display: '11:00 AM – 09:00 PM' }
