@@ -100,7 +100,8 @@ export default function Navbar() {
                   <a href={to}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => setOpen(false)}
+                                   onClick={() => setOpen(false)}
+                  data-gtm={label === 'Order Online' ? 'order-online-nav-mobile' : undefined}
                   className="block py-3 font-sans text-base font-medium border-b border-beige/60 transition-colors duration-150 text-testo hover:text-azzurro"
                 >
                   {label}
