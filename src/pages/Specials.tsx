@@ -1,21 +1,29 @@
-import { Link } from 'react-router'
-
 export default function Specials() {
   return (
-    <section className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 bg-crema">
-      <h1 className="font-display text-4xl text-testo mb-4">
-        Specials <span className="text-red-700">coming soon...</span>
+    <section className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 py-16 bg-crema">
+      <h1 className="font-display text-3xl sm:text-4xl text-bruno mb-6">
+        🌟 Specials at Straight Outta Naples
       </h1>
-      <p className="font-sans text-base text-testo max-w-md mb-8 leading-relaxed">
-        We're cooking up some seasonal specials for you. Check back soon to
-        see what's new on the table.
+
+      <p className="font-sans text-base sm:text-lg text-testo max-w-xl mb-4 leading-relaxed">
+        We've got specials happening across all our ordering options! 🍕🇮🇹
       </p>
-      <Link
-        to="/"
-        className="inline-flex items-center justify-center min-h-[48px] px-8 py-3 rounded-full bg-azzurro text-bruno font-sans font-semibold text-sm tracking-wide transition-colors duration-150 hover:bg-azzurro-bright active:scale-95"
-      >
-        Return to Home
-      </Link>
+
+      <p className="font-sans text-base text-testo max-w-xl mb-4 leading-relaxed">
+        You'll find different specials in store, on our online pickup
+        ordering site, and through Uber Eats &amp; DoorDash.
+      </p>
+
+      <p className="font-sans text-base text-testo max-w-xl mb-4 leading-relaxed">
+        👉 Please note: our specials are not the same across each platform
+        and they change regularly, so there's always something new to
+        discover!
+      </p>
+
+      <p className="font-sans text-base font-semibold text-testo max-w-xl leading-relaxed">
+        Check your preferred ordering option to see what's on special
+        today. ❤️
+      </p>
     </section>
   )
 }
