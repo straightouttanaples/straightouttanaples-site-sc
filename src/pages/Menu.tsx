@@ -199,15 +199,6 @@ export default function Menu() {
           V = Vegetarian &nbsp;·&nbsp; VG = Vegan &nbsp;·&nbsp; GF = Gluten free &nbsp;·&nbsp; VGO = Vegan option available &nbsp;·&nbsp; GFO = Gluten free option available
         </p>
 
-        <p className="font-sans text-testo/60 text-xs leading-relaxed border-t border-crema-gray pt-6">
-          Please advise us when placing your order if you have any food allergies, intolerances, or dietary
-          requirements. While we take care in preparing our products, they may contain or come into contact
-          with common allergens, including gluten, egg, dairy, soy, and fish. Our products are also prepared
-          in facilities that process tree nuts and peanuts. As such, we cannot guarantee that any item is
-          completely free from allergens. A surcharge of 10% applies on Saturdays and Sundays. A surcharge
-          of 15% applies on public holidays. Cakeage fee $2.00 p/p.
-        </p>
-
       </div>
     </section>
   )
