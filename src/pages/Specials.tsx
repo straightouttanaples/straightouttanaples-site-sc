@@ -2,7 +2,7 @@ export default function Specials() {
   return (
     <section className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 py-16 bg-crema">
       <h1 className="font-display text-3xl sm:text-4xl text-bruno mb-6">
-        🌟 Specials at Straight Outta Naples
+        Specials at Straight Outta Naples
       </h1>
 
       <p className="font-sans text-base sm:text-lg text-testo max-w-xl mb-4 leading-relaxed">
@@ -10,7 +10,7 @@ export default function Specials() {
       </p>
 
       <p className="font-sans text-base text-testo max-w-xl mb-4 leading-relaxed">
-        You'll find different specials in store, on our online pickup
+        You'll find different specials in our Pizzaria, on our Online pickup
         ordering site, and through Uber Eats &amp; DoorDash.
       </p>
 
