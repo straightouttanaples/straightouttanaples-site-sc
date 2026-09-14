@@ -31,7 +31,8 @@ export default function Navbar() {
                 
                   <a href={to}
                   target="_blank"
-                  rel="noopener noreferrer"
+                                    rel="noopener noreferrer"
+                  data-gtm={label === 'Order Online' ? 'order-online-nav' : undefined}
                   className="font-sans text-base font-medium tracking-wide transition-colors duration-150 text-testo hover:text-azzurro"
                 >
                   {label}
