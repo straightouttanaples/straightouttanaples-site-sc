@@ -49,9 +49,10 @@ export function HeroSection() {
           </Link>
           <a href="https://straight-outta-naples.square.site/s/order"
             target="_blank"
-            rel="noopener noreferrer"
+                        rel="noopener noreferrer"
+            data-gtm="order-online-hero"
             className="min-h-[48px] flex items-center justify-center px-8 py-3 rounded-full border-2 border-white/70 text-white font-sans font-semibold text-sm tracking-wide transition-colors duration-150 hover:bg-white/10 active:scale-95"
-          >
+            >
             Order Online
           </a>
           <Link
