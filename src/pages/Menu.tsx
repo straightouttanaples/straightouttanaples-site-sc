@@ -1,6 +1,7 @@
 type MenuItem = {
   name: string
   tags?: string
+  price?: string
   description?: string
 }
 
@@ -10,45 +11,44 @@ type MenuSection = {
 }
 
 const ANTIPASTI: MenuItem[] = [
-  { name: "Frittatine Napoletane (2)", description: "Medallions of pasta fritters mixed with bechamel, caramelised onion and veal ragù" },
-  { name: "Crocché di Patate", tags: "V, GF", description: "Crumbed mashed potato croquette with pecorino, smoked provola and parsley" },
-  { name: "Arancini alla Bolognese (2)", tags: "GF", description: "Lightly crumbed arborio risotto balls with slow cooked bolognese ragù, parmesan and mozzarella" },
-  { name: "Arancini al Tartufo (2)", tags: "V, GF", description: "Lightly crumbed arborio risotto balls with creamy porcini, mushrooms, truffle sauce, mozzarella and herbs" },
-  { name: "Scagliuziell", tags: "V, GF", description: "Crispy polenta chips served with a warm creamy parmesan fonduta dipping sauce" },
-  { name: "Frittura di Calamari", tags: "I, GF", description: "Golden fried calamari served with black aioli" },
-  { name: "Prosciutto e Burratina", tags: "GFO", description: "Creamy burratina with San Daniele prosciutto, drizzled with basil oil and black pepper, served with grissini. Add focaccia slices" },
-  { name: "Patatine Fritte", tags: "V, VG, GF", description: "Crispy, large cut, skin on fries, seasoned with a fragrant blend of herbs and sea salt" },
-  { name: "Antipasto alla Toto' (2 p/p)", tags: "I", description: "Selection of our sliced meat, mixed cheeses, mixed olives, roasted peppers, white anchovies and grissini. Add focaccia slices" },
-  { name: "Lasagna 'e Mamma'", description: "Homemade lasagne layers with a rich, slow cooked beef bolognese ragù, creamy handmade bechamel sauce, mozzarella, parmesan, basil and black pepper" },
+  { name: "Crocché di Patate (2)", tags: "V, GF", price: "$14", description: "Crumbed mashed potato croquette with pecorino, smoked provola and parsley" },
+  { name: "Arancini alla Bolognese (2)", tags: "GF", price: "$14", description: "Lightly crumbed arborio risotto balls with slow cooked bolognese ragù, parmesan and mozzarella" },
+  { name: "Arancini al Tartufo (2)", tags: "V, GF", price: "$14", description: "Lightly crumbed arborio risotto balls with creamy porcini, mushrooms, truffle sauce, mozzarella and herbs" },
+  { name: "Scagliuziell", tags: "V, GF", price: "$14", description: "Crispy polenta chips served with a warm creamy parmesan fonduta dipping sauce" },
+  { name: "Frittura di Calamari", tags: "I, GF", price: "$24", description: "Golden fried calamari served with black aioli" },
+  { name: "Prosciutto e Burratina", tags: "GFO", price: "$24", description: "Creamy burratina with San Daniele prosciutto, drizzled with basil oil and black pepper, served with grissini. Add focaccia slices +$5" },
+  { name: "Patatine Fritte", tags: "V, VG, GF", price: "$10", description: "Crispy, large cut, skin on fries, seasoned with a fragrant blend of herbs and sea salt" },
+  { name: "Antipasto alla Toto' (2 p/p)", tags: "I", price: "$35", description: "Selection of our sliced meat, mixed cheeses, mixed olives, roasted peppers, white anchovies and focaccia slices" },
+  { name: "Lasagna 'e Mamma'", price: "$26", description: "Homemade lasagne layers with a rich, slow cooked beef bolognese ragù, creamy handmade bechamel sauce, mozzarella, parmesan, basil and black pepper" },
 ]
 
 const INSALATE: MenuItem[] = [
-  { name: "Insalata Caprese", tags: "V, GF", description: "Sliced tomatoes paired with buffalo mozzarella, fresh basil leaves, oregano, extra virgin olive oil and a drizzle of balsamic glaze" },
-  { name: "Rucola, Pera e Noci", tags: "VG, GF", description: "Peppery rocket leaves tossed with sliced pear and crunchy toasted walnuts, dressed in a light honey vinaigrette, balsamic glaze, topped with shaved parmesan" },
+  { name: "Insalata Caprese", tags: "V, GF", price: "$19", description: "Sliced tomatoes paired with buffalo mozzarella, fresh basil leaves, oregano, extra virgin olive oil and a drizzle of balsamic glaze" },
+  { name: "Rucola, Pera e Noci", tags: "VG, GF", price: "$15", description: "Peppery rocket leaves tossed with sliced pear and crunchy toasted walnuts, dressed in a light honey vinaigrette, balsamic glaze, topped with shaved parmesan" },
 ]
 
 const PIZZE: MenuItem[] = [
-  { name: "Margherita", tags: "V, VGO, GFO", description: "Tomato, mozzarella, parmesan, basil, evo" },
-  { name: "St Gennaro", tags: "V, VGO, GFO", description: "Tomato, smoked provola, parmesan, basil, cracked black pepper, evo" },
-  { name: "Vesuvio", tags: "VGO, GFO", description: "Tomato, mozzarella, basil, mild salami, ricotta, chilli flakes, evo" },
-  { name: "Capricciosa", tags: "VGO, GFO", description: "Tomato, mozzarella, ham, mushroom, artichokes, olives" },
-  { name: "L'Orto di Pulcinella", tags: "V, VGO, GFO", description: "Broccoli velouté, mozzarella, cherry tomatoes, mushrooms, roasted capsicum, crispy shallots" },
-  { name: "Don Carmine", tags: "GFO", description: "Pistacchio paste, mozzarella, mortadella, stracciatella, pistacchio crumble, basil, evo" },
-  { name: "Pino Daniele", tags: "GFO", description: "Mozzarella, San Daniele prosciutto, rocket, shaved parmesan, evo" },
-  { name: "Maradona", tags: "V, GFO", description: "Yellow tomato, buffalo mozzarella, cherry tomato, basil reduction" },
-  { name: "Masto Marco", tags: "GFO", description: "Genovese ragù (veal and caramelised onions), smoked provola, parmesan chips, parsley oil" },
-  { name: "Katari'", tags: "I, GFO", description: "Zucchini sauce, mozzarella, cherry tomatoes, prawns, stracciatella, chilli, black caviar" },
-  { name: "St Antonio", tags: "GFO", description: "Truffle cream, mozzarella, mushroom, porchetta, potato crocché" },
-  { name: "Scugnizzo", tags: "GFO", description: "Smoked provola, ham, cherry tomatoes, basil, cracked black pepper, basil oil" },
-  { name: "Spaccanapoli", tags: "VGO, GFO", description: "Smoked provola, sausages, friarielli Napoletani" },
-  { name: "Marechiaro", tags: "I, GFO", description: "Yellow tomato, mozzarella, calamari, white fish, prawns, mussels, parsley oil" },
-  { name: "Carlucciell", tags: "VO", description: "Fried dough filled with ricotta, mozzarella, tomatoes, parmesan, basil, ham, cracked black pepper" },
+  { name: "Margherita", tags: "V, VGO, GFO", price: "$23", description: "Tomato, mozzarella, parmesan, basil, evo" },
+  { name: "St Gennaro", tags: "V, VGO, GFO", price: "$24", description: "Tomato, smoked provola, parmesan, basil, cracked black pepper, evo" },
+  { name: "Vesuvio", tags: "VGO, GFO", price: "$26", description: "Tomato, mozzarella, basil, mild salami, ricotta, chilli flakes, evo" },
+  { name: "Capricciosa", tags: "VGO, GFO", price: "$26", description: "Tomato, mozzarella, ham, mushroom, artichokes, olives" },
+  { name: "L'Orto di Pulcinella", tags: "V, VGO, GFO", price: "$26", description: "Broccoli velouté, mozzarella, cherry tomatoes, mushrooms, roasted capsicum, crispy shallots" },
+  { name: "Don Carmine", tags: "GFO", price: "$29", description: "Pistacchio paste, mozzarella, mortadella, stracciatella, pistacchio crumble, basil, evo" },
+  { name: "Pino Daniele", tags: "GFO", price: "$29", description: "Mozzarella, San Daniele prosciutto, rocket, shaved parmesan, evo" },
+  { name: "Maradona", tags: "V, GFO", price: "$27", description: "Yellow tomato, buffalo mozzarella, cherry tomato, basil reduction" },
+  { name: "Masto Marco", tags: "GFO", price: "$29", description: "Genovese ragù (veal and caramelised onions), smoked provola, parmesan chips, parsley oil" },
+  { name: "Katari'", tags: "I, GFO", price: "$30", description: "Zucchini sauce, mozzarella, cherry tomatoes, prawns, stracciatella, chilli, black caviar" },
+  { name: "St Antonio", tags: "GFO", price: "$29", description: "Truffle cream, mozzarella, mushroom, porchetta, potato crocché" },
+  { name: "Scugnizzo", tags: "GFO", price: "$27", description: "Smoked provola, ham, cherry tomatoes, basil, cracked black pepper, basil oil" },
+  { name: "Spaccanapoli", tags: "VGO, GFO", price: "$27", description: "Smoked provola, sausages, friarielli Napoletani" },
+  { name: "Marechiaro", tags: "I, GFO", price: "$30", description: "Yellow tomato, mozzarella, calamari, white fish, prawns, mussels, parsley oil" },
+  { name: "Carlucciell", tags: "VO", price: "$28", description: "Fried dough filled with ricotta, mozzarella, tomatoes, parmesan, basil, ham, cracked black pepper" },
 ]
 
 const FOCACCIE: MenuItem[] = [
-  { name: "Garlic & Herbs" },
-  { name: "Garlic & Cheese" },
-  { name: "Cosacca", description: "Tomato & parmesan" },
+  { name: "Garlic & Herbs", price: "$14" },
+  { name: "Garlic & Cheese", price: "$16" },
+  { name: "Cosacca", price: "$16", description: "Tomato & parmesan" },
 ]
 
 const EXTRAS_LEFT: MenuItem[] = [
@@ -70,14 +70,13 @@ const EXTRAS_RIGHT: MenuItem[] = [
 ]
 
 const DOLCI: MenuItem[] = [
-  { name: "Tiramisù" },
-  { name: "Pannacotta", description: "Home made strawberry jam" },
-  { name: "Cannoli", description: "Ricotta / custard / cioccolato" },
-  { name: "Mousse al Cioccolato" },
-  { name: "Angioletti Napoletani", description: "Neapolitan mini donuts, Nutella" },
-  { name: "Sweet Pizza", description: "Nutella, pistacchio cream, ricotta dolce" },
-  { name: "Tartufo Semifreddo", description: "Nocciola / pistacchio / limoncello" },
-  { name: "Bowl of Vanilla Ice Cream" },
+  { name: "Tiramisù", price: "$14" },
+  { name: "Cannoli", price: "$8", description: "Ricotta / pistacchio / cioccolato" },
+  { name: "Mousse al Cioccolato", price: "$13" },
+  { name: "Angioletti Napoletani", price: "$18", description: "Neapolitan mini donuts, Nutella" },
+  { name: "Sweet Pizza", price: "$19", description: "Nutella, pistacchio cream, ricotta dolce" },
+  { name: "Tartufo Semifreddo", price: "$12", description: "Nocciola / pistacchio / limoncello" },
+  { name: "Bowl of Vanilla Ice Cream", price: "$5", description: "Add salted caramel & biscoff +$3" },
 ]
 
 const SECTIONS: MenuSection[] = [
@@ -96,6 +95,11 @@ function ItemRow({ item }: { item: MenuItem }) {
         {item.tags && (
           <span className="font-sans text-azzurro text-sm sm:text-base font-semibold">
             ({item.tags})
+          </span>
+        )}
+        {item.price && (
+          <span className="font-sans text-bruno text-sm sm:text-base font-bold ml-auto">
+            {item.price}
           </span>
         )}
       </div>
@@ -138,7 +142,14 @@ export default function Menu() {
         </div>
 
         {SECTIONS.map((section) => (
-          <Section key={section.title} section={section} />
+          <div key={section.title}>
+            <Section section={section} />
+            {section.title === "Pizze" && (
+              <p className="font-sans text-testo/70 text-xs -mt-10 mb-14">
+                *Make it a Ruota di Carro +$4 &nbsp;·&nbsp; Extra large & extra thin (dine in only)
+              </p>
+            )}
+          </div>
         ))}
 
         <div className="mb-14">
@@ -173,7 +184,7 @@ export default function Menu() {
           </div>
         </div>
 
-        <div className="mb-6">
+        <div className="mb-10">
           <h2 className="font-display text-2xl sm:text-3xl text-bruno mb-4 pb-2 border-b-2 border-azzurro inline-block">
             Dolci
           </h2>
@@ -184,8 +195,17 @@ export default function Menu() {
           </ul>
         </div>
 
-        <p className="font-sans text-testo/60 text-xs text-center mt-10">
+        <p className="font-sans text-testo/60 text-xs text-center mt-10 mb-8">
           V = Vegetarian &nbsp;·&nbsp; VG = Vegan &nbsp;·&nbsp; GF = Gluten free &nbsp;·&nbsp; VGO = Vegan option available &nbsp;·&nbsp; GFO = Gluten free option available
+        </p>
+
+        <p className="font-sans text-testo/60 text-xs leading-relaxed border-t border-crema-gray pt-6">
+          Please advise us when placing your order if you have any food allergies, intolerances, or dietary
+          requirements. While we take care in preparing our products, they may contain or come into contact
+          with common allergens, including gluten, egg, dairy, soy, and fish. Our products are also prepared
+          in facilities that process tree nuts and peanuts. As such, we cannot guarantee that any item is
+          completely free from allergens. A surcharge of 10% applies on Saturdays and Sundays. A surcharge
+          of 15% applies on public holidays. Cakeage fee $2.00 p/p.
         </p>
 
       </div>
